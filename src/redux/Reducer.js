@@ -7,7 +7,7 @@ export const reducer=(state = initialState,action)=>{
             return state + 1;
             break;
         case DEC:
-            return state -1;
+            return state > 0 ? state - 1 : state;
             break;
         default:
             return state;
